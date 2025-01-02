@@ -313,12 +313,18 @@
                     <button id="btn-decline" class="btn bg-gray-200 text-gray-700 px-2 py-2 lg:px-4 lg:py-2 text-xl lg:text-base rounded shadow transition"
                         onclick="toggleGuestInput(false, 'btn-decline')">Maaf tidak bisa</button>
                 </div>
+                
             
                 <div id="guest-input" class="mb-6 hidden">
                     <label for="guest-count" class="block text-xl lg:text-sm font-medium text-gray-700 mb-2">Jumlah Tamu:</label>
                     <input type="number" id="guest-count" name="guest-count" min="1" value="1" class="w-full p-6 lg:p-3 border text-xl lg:text-base border-gray-300 rounded shadow text-center focus:outline-none focus:ring-2 focus:ring-amber-500">
                 </div>
-            
+
+                <div class="grid  mb-6">
+                    <label for="guest-count" class="block text-xl lg:text-sm font-medium text-gray-700 mb-2">Tinggalkan Pesan:</label>
+                    <textarea name="ucapan" id="" class="text-left w-full p-6 lg:p-3 border text-xl lg:text-base border-gray-300 rounded shadow focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                </div>
+
                 <div class="flex justify-center items-center">
                     <button class="submit-button bg-amber-500 text-white px-6 py-2 rounded shadow hover:bg-amber-600 transition text-xl lg:text-base">
                         Kirim
@@ -403,34 +409,52 @@
             <!-- content 9 -->
             <div class="bg-tosca w-full h-auto pt-16 p-14 px-5">
                 <div class="pt-10 border border-solid bg-white rounded-xl text-dark px-10 pb-10">
-                    <h1 class="text-center text-4xl lg:text-lg">Tinggalkan pesan/doa buat kami</h1>
-                    <div class="mt-6 font-sans text-justify ">
-                        <h1 class="text-2xl lg:text-sm font-semibold">Raditiya</h1>
-                        <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusamus dignissimos nemo?</p>
-                    </div>
-                    <div class="mt-6 font-sans text-left">
-                        <h1 class="text-2xl lg:text-sm font-semibold">Suryanto</h1>
-                        <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam.</p>
-                    </div>
-                    <div class="mt-6 font-sans text-left ">
-                        <h1 class="text-2xl lg:text-sm font-semibold ">Sutisna</h1>
-                        <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, adipisci. Enim reiciendis dolorem hic.</p>
-                    </div>
-                    <div class="mt-6 font-sans text-left ">
-                        <h1 class="text-2xl lg:text-sm font-semibold ">Tenten</h1>
-                        <p class="text-2xl lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam enim provident tempora accusantium obcaecati quas aspernatur!</p>
-                    </div>
-                    <div class="mt-6 font-sans text-left ">
-                        <h1 class="text-2xl lg:text-sm font-semibold ">Hima</h1>
-                        <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae ea tempore ex nostrum unde?</p>
-                    </div>
-                    <div class="mt-6 font-sans text-left ">
-                        <h1 class="text-2xl lg:text-sm font-semibold ">Tenten</h1>
-                        <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem placeat nobis magnam!</p>
+                    <h1 class="text-center text-4xl lg:text-lg font-semibold">Tinggalkan pesan/doa buat kami</h1>
+                    <div class="overflow-y-scroll max-h-[500px] mt-6"> <!-- Mengatur tinggi maksimal dan scroll vertikal -->
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Raditiya</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusamus dignissimos nemo?</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Suryanto</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam.</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Sutisna</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, adipisci. Enim reiciendis dolorem hic.</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Tenten</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam enim provident tempora accusantium obcaecati quas aspernatur!</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Hima</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae ea tempore ex nostrum unde?</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Tenten</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem placeat nobis magnam!</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Tenten</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem placeat nobis magnam!</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Tenten</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem placeat nobis magnam!</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Tenten</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem placeat nobis magnam!</p>
+                        </div>
+                        <div class="font-sans text-left mb-5">
+                            <h1 class="text-2xl lg:text-sm font-semibold">Tenten</h1>
+                            <p class="text-2xl lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam autem placeat nobis magnam!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            
 
             <!-- content 10 -->
             <div class="relative w-full">
